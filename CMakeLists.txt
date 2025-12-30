@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(MyProject)
+project(Chip8emu)
 
 # SFML 3 requires C++17 or newer
 set(CMAKE_CXX_STANDARD 17)
@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
 
 # 2. Add your executable
-add_executable(my_program main.cpp)
+add_executable(chip8emu main.cpp)
 
 # 3. Link using the new SFML 3 target naming convention (SFML::Component)
-target_link_libraries(my_program SFML::Graphics SFML::Window SFML::System)
+target_link_libraries(chip8emu SFML::Graphics SFML::Window SFML::System)
