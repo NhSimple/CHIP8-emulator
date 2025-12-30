@@ -1,0 +1,6 @@
+build/
+bin/
+*.o
+*.out
+my_program
+.vscode/
